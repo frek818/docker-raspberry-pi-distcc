@@ -1,0 +1,9 @@
+services:
+  distcc:
+    image: herman818/raspberry-pi-distcc  
+    build: .
+    ports:
+      - "3633:3633"
+      - "3632:3632"
+    environment:
+      OPTIONS: "" # distccd options
